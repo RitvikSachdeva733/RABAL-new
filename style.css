@@ -378,6 +378,7 @@ nav {
 
     .about p {
         font-size: 0.9rem;
+        margin-block: 1rem;
     }
 }
 
@@ -522,7 +523,7 @@ nav {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -581,6 +582,49 @@ nav {
     margin-top: 3rem;
     font-style: italic;
     color: var(--text-light);
+}
+
+/* Media query for screens less than 430px */
+@media (max-width: 430px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Media query for screens less than 350px */
+@media (max-width: 350px) {
+    .services-content {
+        padding: 4rem 1rem;
+    }
+
+    .service-intro h3 {
+        font-size: 1.8rem;
+    }
+
+    .service-grid {
+        gap: 0.5rem;
+    }
+
+    .service-card {
+        padding: 1.2rem;
+    }
+
+    .service-card i {
+        font-size: 2rem;
+    }
+
+    .service-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
 }
 
 /* ===== Products Section ===== */
